@@ -31,6 +31,7 @@
     --weight-bold:700;
     --weight-semi-bold:600;
     --weight-regular:400;
+
 }
 
 /*  */
@@ -62,9 +63,14 @@ h4{
 p{
     font-size: var(--font-small);
     font-weight: var(--weight-regular);
-    margin: 4px 0;
+    margin: 2px 0;
 }
 
+/* 구글아이콘 */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
 
 
 body{

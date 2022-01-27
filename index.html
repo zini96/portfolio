@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style/header&footer.css">
     <link rel="stylesheet" href="style/style.css">
     <script src="main.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 <body>
     <!-- 상단이동버튼 -->
@@ -48,7 +49,7 @@
                     <button type="button" onclick="" class="git_btn">github 바로가기</button>
                 </div>
             </div>
-            <div id="arrow">
+            <div class="arrow">
                 <span class="material-icons">expand_more</span>
                 <p>scroll</p>
             </div>
@@ -312,13 +313,14 @@
             <div class="titleBox">
                 <h2>CONTACT ME</h2>
             </div>
-            <div>
-                <h2>If you wanna talk with me, please use this</h2>
-                <h3>email address</h3>
-                <h3>phone number</h3>
-                <h4><a href="">깃헙바로가기</a></h4>
-                <p>복사하기</p>
-                <!-- 클릭하면 클립보드에 이메일 복사되게 만들기 깃헙처럼 -->
+            <div id="contact-text">
+                <h3>if you wanna talk with me, please use this</h3>
+                <div id="email_box">
+                    <span class="material-icons md-36 e-icon">mail_outline</span>
+                    <h2>Email address : </h2>
+                    <div id="email">rkdtnwls7942@naver.com</div>
+                    <button id="copybtn" onclick="copyToClickBoard()"><span class="material-icons">content_copy</span></button>
+                </div>
             </div>
         </section>
     </main>

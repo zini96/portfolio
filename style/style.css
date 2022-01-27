@@ -69,7 +69,7 @@ section {
     background-color: var(--o_orange-color);
     color: var(--o_white-color);
 }
-#arrow{
+.arrow{
     top: 80%;
     position: absolute;
     left: 50%;
@@ -80,8 +80,8 @@ section {
 }
 @keyframes arrow {
     0%{margin: 0px 2px;}
-    70%{margin: 80px 2px; opacity: 0.7;}
-    100%{margin:60px 2px; opacity: 1;}
+    70%{margin: 40px 2px; opacity: 0.7;}
+    100%{margin:20px 2px; opacity: 1;}
 }
 /* sec2 어바웃미*/
 #section2{
@@ -229,7 +229,7 @@ section {
 }
 #skill_left{
     flex-basis: 60%;
-    padding: 50px 40px;
+    padding: 20px 30px;
 }
 .skill{
     margin-bottom: 30px;
@@ -258,17 +258,16 @@ section {
 #tools{
     height: 50%;
     background-color: var(--o_beige-color);
-    padding: 40px 0;
+    padding: 20px 0;
     color: var(--o_white-color);
 }
 #tools ul, #etc ul{
-    margin-top: 15px;
     line-height: 3;
 }
 #etc{
     height: 50%;
     background-color: var(--o_brown-color);
-    padding: 40px 0;
+    padding: 20px 0;
     color: var(--o_white-color);
 }
 /* sec4 프로젝트*/
@@ -391,6 +390,31 @@ section {
     height: 100%;
     text-align: center;
 }
+#contact-text{
+    width:80%;
+    margin: 0 auto;
+}
+#email{
+    font-size: var(--font-medium);
+}
+.e-icon{
+    margin-right: 15px;
+    vertical-align: text-bottom;
+}
+#email_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#email_box h2{
+    margin-right: 10px;
+}
+#copybtn{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    margin: 10px 20px 0px 20px;
+}
 
 /* 반응형 */
 @media all and (min-width:640px) {
@@ -419,6 +443,18 @@ section {
         width: 55%;
         text-align: start;
         padding: 0 40px;
+    }
+    #skill_left{
+        padding: 50px 40px;
+    }
+    #tools{
+        padding: 40px 0;
+    }
+    #etc{
+        padding: 40px 0;
+    }
+    #tools ul, #etc ul{
+        margin-top: 15px;
     }
     .project{
         width: 45%;

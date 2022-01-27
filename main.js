@@ -72,6 +72,32 @@ categoryBtn.addEventListener('click',(e)=>{
     },300)
 })
 
+//이메일 주소 복사
+function copyToClickBoard(){
+    const email = document.getElementById("email").textContent;
+    const textArea = document.createElement('textarea');
+    document.body.appendChild(textArea);
+    textArea.value = email
+
+    navigator.clipboard.writeText(textArea.value)
+        .then(() => {
+            Swal.fire(
+                'Copy!',
+                'You can send me email!',
+                'success'
+              )
+        })
+        .catch(() => {
+            Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Something went wrong!'
+            })
+        })
+    
+    document.body.removeChild(textArea);
+}
+
 
 //sec1 버튼이동
 function toProject() {
