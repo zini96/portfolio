@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zini's Portfolio</title>
+    <meta name="description" content="portfolio for front-end developer sujin">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-96x96.png">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style/header&footer.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- 상단이동버튼 -->
+    <button id="topBtn" onclick="window.scrollTo({top:0, left:0, behavior:'smooth'})"><span class="material-icons">keyboard_double_arrow_up</span></button>
+    <!-- 상단이동버튼/ -->
+    <!-- 헤더 -->
+    <header>
+        <nav class="innerCon">
+            <a href="#"><img src="imgs/logo.png" class="logo on"></a>
+            <!-- 로고 만들기(파비콘이랑 통일) -->
+            <ul id="nav_menu">
+                <li data-link="#section2">ABOUT ME</li>
+                <li data-link="#section3">SKILLS</li>
+                <li data-link="#section4">PROJECT</li>
+                <li data-link="#section5">CONTACT</li>
+            </ul>
+            <div id="nav_Btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="section1">
+            <div id="blackbg"></div>
+            <div id="sec1_text">
+                <h1>프론트엔드 개발자가 되고싶은 입니다.</h1>
+                <h2>ddddddddddddddddddddddddddddddddd</h2>
+                <div class="sec1Btn">
+                    <button type="button" onclick="toProject()" class="work_btn">project 바로가기</button>
+                    <button type="button" onclick="" class="git_btn">github 바로가기</button>
+                </div>
+            </div>
+            <div id="arrow">
+                <span class="material-icons">expand_more</span>
+                <p>scroll</p>
+            </div>
+        </section>
+        <section id="section2" class="innerBox">
+            <div class="titleBox">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div id="intro1">
+                <div id="intro_img"><img src="imgs/logo.png" alt="profile-img"></div>
+                <div id="intro_text">
+                    <h3>좌우명</h3>
+                    <p>desc</p>
+                </div>
+            </div>
+            <div id="intro2">
+                <div id="edu">
+                    <h3>Education</h3>
+                    <div class="life_map_1">                        
+                        <span class="main_branch"></span>
+                        <div class="bubble_box">
+                            <span class="turning_point"></span>
+                            <div class="bubble">
+                                <h4>[스마트웹 & 콘텐츠 개발]PWA 제작 프론트엔드 개발 디지털 실무 양성과정</h4>
+                                <p>수강기간 : 2021.09.06 - 2022.03.04</p>
+                            </div>
+                        </div>
+                        <div class="bubble_box">
+                            <span class="turning_point"></span>
+                            <div class="bubble">
+                                <h4>드림코딩 아카데미 REACT 실무강의</h4>
+                                <p>수강기간 : 2021.09.06 - 2022.03.04</p>
+                            </div>
+                        </div>
+                        <div class="bubble_box">
+                            <span class="turning_point"></span>
+                            <div class="bubble">
+                                <h4>드림코딩 아카데미 REACT 실무강의</h4>
+                                <p>수강기간 : 2021.09.06 - 2022.03.04</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="exp">
+                    <h3>Experience</h3>
+                    <div class="life_map_2">                        
+                        <span class="main_branch"></span>
+                        <div class="bubble_box">
+                            <div class="bubble">
+                                <h4>스튜디오 워크플레이스 재직</h4>
+                                <p>재직기간 : 2021.06.10 - 2022.02.10</p>
+                            </div>
+                            <span class="turning_point"></span>
+                        </div>
+                        <div class="bubble_box">
+                            <div class="bubble">
+                                <h4>드림코딩 </h4>
+                                <p>수강기간 : </p>
+                            </div>
+                            <span class="turning_point"></span>
+                        </div>
+                        <div class="bubble_box">
+                            <div class="bubble">
+                                <h4>드림코딩</h4>
+                                <p>수강기간 : </p>
+                            </div>
+                            <span class="turning_point"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section3" class="innerBox">
+            <div class="titleBox">
+                <h2>SKILLS</h2>
+            </div>
+            <div id="skillset">
+                <div id="skill_left">
+                    <h3 class="skill_title">Skills</h3>
+                    <div class="skill">
+                        <div class="skill_desc">
+                            <span>HTML</span>
+                            <span>99%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 99%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_desc">
+                            <span>CSS</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_desc">
+                            <span>JAVASCRIPT</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill_desc">
+                            <span>REACT</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="skill_value" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="skill_right">
+                    <div id="tools">
+                        <h3 class="skill_title">Tools</h3>
+                        <ul>
+                            <li><span>Visual Studio Code</span></li>
+                        </ul>
+                    </div>
+                    <div id="etc">
+                        <h3 class="skill_title">Etc</h3>
+                        <ul>
+                            <li><span>Git</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section4" class="innerBox">
+            <div class="titleBox">
+                <h2>PROJECT</h2>
+            </div>
+            <div id="categories">
+                <button class="category_btn selected" data-filter="*">All<span class="category_count">10</span></button>
+                <button class="category_btn" data-filter="javascript">Javascript<span class="category_count">5</span></button>
+                <button class="category_btn" data-filter="react">React<span class="category_count">5</span></button>
+            </div>
+            <div id="work_project">
+                <div class="project" data-type="javascript"> 
+                    <h4>프로젝트 이름1</h4>
+                    <img src="imgs/bg_orange.jpg" alt="프로젝트 이미지">
+                    <div class="project_text">
+                        <ul class="project_text_list">
+                            <li>사용 기술 :
+                                <ul class="tool">
+                                    <li class="tooltip html"><span class="tooltiptext"><img src="imgs/html.png" alt="html"></span></li>
+                                    <li class="tooltip css"><span class="tooltiptext"><img src="imgs/css.png" alt="css"></span></li>
+                                    <li class="tooltip Javascript"><span class="tooltiptext"><img src="imgs/javascript.png" alt="js"></span></li>
+                                    <li class="tooltip react"><span class="tooltiptext"><img src="imgs/physics.png" alt="react"></span></li>
+                                </ul>
+                            </li>
+                            <li>소요 기간 : n일</li>
+                            <li>참여도 : 100%(1인 제작)</li>
+                            <li>사이트 목적 : 사이트 목적</li>
+                        </ul>
+                    </div>
+                    <div class="project_btnbox">
+                        <button class="project_btn"><a href="">Page VIEW</a></button>
+                        <button class="project_btn"><a href="">Code VIEW</a></button>
+                    </div>
+                </div>          
+                <div class="project" data-type="javascript"> 
+                    <h4>프로젝트 이름2</h4>
+                    <img src="imgs/bg_orange.jpg" alt="프로젝트 이미지">
+                    <div class="project_text">
+                        <ul class="project_text_list">
+                            <li>사용 기술 :
+                                <ul class="tool">
+                                    <li class="tooltip html"><span class="tooltiptext"><img src="imgs/html.png" alt="html"></span></li>
+                                    <li class="tooltip css"><span class="tooltiptext"><img src="imgs/css.png" alt="css"></span></li>
+                                    <li class="tooltip Javascript"><span class="tooltiptext"><img src="imgs/javascript.png" alt="js"></span></li>
+                                    <li class="tooltip react"><span class="tooltiptext"><img src="imgs/physics.png" alt="react"></span></li>
+                                </ul>
+                            </li>
+                            <li>소요 기간 : n일</li>
+                            <li>참여도 : 100%(1인 제작)</li>
+                            <li>사이트 목적 : 사이트 목적</li>
+                        </ul>
+                    </div>
+                    <div class="project_btnbox">
+                        <button class="project_btn"><a href="">Page VIEW</a></button>
+                        <button class="project_btn"><a href="">Code VIEW</a></button>
+                    </div>
+                </div>           
+                <div class="project" data-type="react"> 
+                    <h4>프로젝트 이름3</h4>
+                    <img src="imgs/bg_orange.jpg" alt="프로젝트 이미지">
+                    <div class="project_text">
+                        <ul class="project_text_list">
+                            <li>사용 기술 :
+                                <ul class="tool">
+                                    <li class="tooltip html"><span class="tooltiptext"><img src="imgs/html.png" alt="html"></span></li>
+                                    <li class="tooltip css"><span class="tooltiptext"><img src="imgs/css.png" alt="css"></span></li>
+                                    <li class="tooltip Javascript"><span class="tooltiptext"><img src="imgs/javascript.png" alt="js"></span></li>
+                                    <li class="tooltip react"><span class="tooltiptext"><img src="imgs/physics.png" alt="react"></span></li>
+                                </ul>
+                            </li>
+                            <li>소요 기간 : n일</li>
+                            <li>참여도 : 100%(1인 제작)</li>
+                            <li>사이트 목적 : 사이트 목적</li>
+                        </ul>
+                    </div>
+                    <div class="project_btnbox">
+                        <button class="project_btn"><a href="">Page VIEW</a></button>
+                        <button class="project_btn"><a href="">Code VIEW</a></button>
+                    </div>
+                </div>           
+                <div class="project" data-type="react"> 
+                    <h4>프로젝트 이름4</h4>
+                    <img src="imgs/bg_orange.jpg" alt="프로젝트 이미지">
+                    <div class="project_text">
+                        <ul class="project_text_list">
+                            <li>사용 기술 :
+                                <ul class="tool">
+                                    <li class="tooltip html"><span class="tooltiptext"><img src="imgs/html.png" alt="html"></span></li>
+                                    <li class="tooltip css"><span class="tooltiptext"><img src="imgs/css.png" alt="css"></span></li>
+                                    <li class="tooltip Javascript"><span class="tooltiptext"><img src="imgs/javascript.png" alt="js"></span></li>
+                                    <li class="tooltip react"><span class="tooltiptext"><img src="imgs/physics.png" alt="react"></span></li>
+                                </ul>
+                            </li>
+                            <li>소요 기간 : n일</li>
+                            <li>참여도 : 100%(1인 제작)</li>
+                            <li>사이트 목적 : 사이트 목적</li>
+                        </ul>
+                    </div>
+                    <div class="project_btnbox">
+                        <button class="project_btn"><a href="">Page VIEW</a></button>
+                        <button class="project_btn"><a href="">Code VIEW</a></button>
+                    </div>
+                </div>           
+                <div class="project" data-type="javascript"> 
+                    <h4>프로젝트 이름5</h4>
+                    <img src="imgs/bg_orange.jpg" alt="프로젝트 이미지">
+                    <div class="project_text">
+                        <ul class="project_text_list">
+                            <li>사용 기술 :
+                                <ul class="tool">
+                                    <li class="tooltip html"><span class="tooltiptext"><img src="imgs/html.png" alt="html"></span></li>
+                                    <li class="tooltip css"><span class="tooltiptext"><img src="imgs/css.png" alt="css"></span></li>
+                                    <li class="tooltip Javascript"><span class="tooltiptext"><img src="imgs/javascript.png" alt="js"></span></li>
+                                    <li class="tooltip react"><span class="tooltiptext"><img src="imgs/physics.png" alt="react"></span></li>
+                                </ul>
+                            </li>
+                            <li>소요 기간 : n일</li>
+                            <li>참여도 : 100%(1인 제작)</li>
+                            <li>사이트 목적 : 사이트 목적</li>
+                        </ul>
+                    </div>
+                    <div class="project_btnbox">
+                        <button class="project_btn"><a href="">Page VIEW</a></button>
+                        <button class="project_btn"><a href="">Code VIEW</a></button>
+                    </div>
+                </div>                 
+            </div>
+        </section>
+        <section id="section5" class="innerBox">
+            <div class="titleBox">
+                <h2>CONTACT ME</h2>
+            </div>
+            <div>
+                <h2>If you wanna talk with me, please use this</h2>
+                <h3>email address</h3>
+                <h3>phone number</h3>
+                <h4><a href="">깃헙바로가기</a></h4>
+                <p>복사하기</p>
+                <!-- 클릭하면 클립보드에 이메일 복사되게 만들기 깃헙처럼 -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Thanks for the visiting my website.<br/>
+        Copyright 2022 All rights reserved Designded by Sujin Kang</p>
+    </footer>
+</body>
+</html>
